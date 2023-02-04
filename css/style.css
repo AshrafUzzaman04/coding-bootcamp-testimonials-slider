@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+  .row {
+    max-width: 500px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .row > :nth-child(1) {
+    font-size: 19px !important;
+    margin-top: 50px !important;
+  }
+  .row > :nth-child(1) > div {
+    padding-left: 40% !important;
+    top: -38px !important;
+  }
+  .row > :nth-child(1) > div > img {
+    width: 70px !important;
+  }
+  .row > :nth-child(1) > p {
+    opacity: 0.8;
+  }
+  .row > :nth-child(1) > span > b {
+    display: block !important;
+  }
+  .row > :nth-child(2) > .navigation {
+    bottom: 7% !important;
+    left: 40% !important;
+  }
+}
+.container-fluid {
+  background-image: url("../images/pattern-curve.svg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left bottom;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid > .container > .row > :nth-child(1) {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  position: relative;
+}
+.container-fluid > .container > .row > :nth-child(1) > div {
+  position: absolute;
+  padding-left: 70px;
+  top: -48px;
+  color: hsl(240deg, 38%, 20%);
+}
+.container-fluid > .container > .row > :nth-child(1) > div > img {
+  width: 88px;
+}
+.container-fluid > .container > .row > :nth-child(1) > p {
+  opacity: 0.8;
+}
+.container-fluid > .container > .row > :nth-child(1) > span {
+  opacity: 0.8;
+  color: hsl(240deg, 18%, 77%);
+}
+.container-fluid > .container > .row > :nth-child(1) > span > b {
+  color: black;
+  opacity: 1;
+}
+.container-fluid > .container > .row > :nth-child(2) {
+  position: relative;
+}
+.container-fluid > .container > .row > :nth-child(2) > .navigation {
+  position: absolute;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+  bottom: 35px;
+  left: 115px;
+}
+.container-fluid > .container > .row > :nth-child(2) > .navigation > img {
+  cursor: pointer;
+  padding: 8px 10px 8px 10px;
+}/*# sourceMappingURL=style.css.map */
