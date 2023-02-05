@@ -91,10 +91,14 @@ body {
   border-radius: 20px;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
-  bottom: 35px;
-  left: 115px;
+  bottom: 38px;
+  left: 170px;
+  overflow: hidden;
 }
 .container-fluid > .container > .row > :nth-child(2) > .navigation > img {
   cursor: pointer;
   padding: 8px 10px 8px 10px;
+}
+.container-fluid > .container > .row > :nth-child(2) > .navigation > img:hover {
+  background-color: hsla(240deg, 18%, 77%, 0.281);
 }/*# sourceMappingURL=style.css.map */

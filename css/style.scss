@@ -93,11 +93,15 @@ body {
           border-radius: 20px;
           background-color: white;
           box-shadow: 0 2px 8px rgb(0 0 0 / 22%);
-          bottom: 35px;
-          left: 115px;
+          bottom: 38px;
+          left: 170px;
+          overflow: hidden;
           > img {
             cursor: pointer;
             padding: 8px 10px 8px 10px;
+            &:hover {
+              background-color: hsla(240, 18%, 77%, 0.281);
+            }
           }
         }
       }
