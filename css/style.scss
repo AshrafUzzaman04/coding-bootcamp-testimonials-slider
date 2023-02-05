@@ -10,7 +10,10 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 20px;
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 405px) {
+  .container {
+    max-width: 320px !important;
+  }
   .row {
     max-width: 500px;
     flex-direction: column-reverse;
@@ -35,12 +38,46 @@ body {
         }
       }
     }
-    > :nth-child(2) {
-      > .navigation {
-        bottom: 7% !important;
-        left: 40% !important;
+  }
+  .navigation {
+    top: 247px !important;
+    transform: translate(0) !important;
+    left: calc(100% - 202px) !important;
+  }
+}
+@media only screen and (min-width: 406px) and (max-width: 990px) {
+  .container {
+    max-width: 400px !important;
+  }
+  .row {
+    max-width: 500px;
+    flex-direction: column-reverse;
+    text-align: center;
+    > :nth-child(1) {
+      font-size: 19px !important;
+      margin-top: 50px !important;
+      > div {
+        padding-left: 40% !important;
+        top: -38px !important;
+
+        > img {
+          width: 70px !important;
+        }
+      }
+      > p {
+        opacity: 0.8;
+      }
+      > span {
+        > b {
+          display: block !important;
+        }
       }
     }
+  }
+  .navigation {
+    top: 317px !important;
+    transform: translate(0) !important;
+    left: calc(100% - 240px) !important;
   }
 }
 .container-fluid {
@@ -55,14 +92,20 @@ body {
   justify-content: center;
   align-items: center;
   > .container {
+    display: block;
+    height: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    position: relative;
     > .row {
+      width: 100%;
       > :nth-child(1) {
         height: max-content;
         z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 40px;
+        padding-left: 0 !important;
         position: relative;
         > div {
           position: absolute;
@@ -85,26 +128,28 @@ body {
           }
         }
       }
-      > :nth-child(2) {
-        position: relative;
-        > .navigation {
-          position: absolute;
-          display: inline-block;
-          border-radius: 20px;
-          background-color: white;
-          box-shadow: 0 2px 8px rgb(0 0 0 / 22%);
-          bottom: 38px;
-          left: 170px;
-          overflow: hidden;
-          > img {
-            cursor: pointer;
-            padding: 8px 10px 8px 10px;
-            &:hover {
-              background-color: hsla(240, 18%, 77%, 0.281);
-            }
-          }
+    }
+    > .navigation {
+      display: inline-block;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 22%);
+      position: absolute;
+      left: 64%;
+      transform: translateX(-50%);
+      top: 428px;
+      z-index: 1;
+      overflow: hidden;
+      > img {
+        cursor: pointer;
+        padding: 8px 10px 8px 10px;
+        &:hover {
+          background-color: hsla(240, 18%, 77%, 0.281);
         }
       }
     }
   }
+}
+.slide-2 {
+  display: none;
 }
